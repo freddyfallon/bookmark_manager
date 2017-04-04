@@ -1,9 +1,6 @@
 require 'sinatra/base'
 require_relative 'models/link'
 ENV['RACK_ENV'] ||= 'development'
-# Bundler.require(:default, RACK_ENV)
-# APPROOT = File.expandpath File.join(".", "app", "app.rb")
-# RACKENV = ENV['RACKENV']
 
 class BookmarkManager < Sinatra::Base
   get '/links' do
