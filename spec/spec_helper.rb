@@ -21,9 +21,11 @@
 require 'capybara/rspec'
 require 'rspec'
 require 'byebug'
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
+require './app/models/link'
 
-Capybara.app = Bookmarks
+# require File.join(File.dirname(__FILE__), '..', 'app.rb')
+#
+# Capybara.app = Bookmarks
 
 ENV['RACK_ENV'] = 'test'
 
