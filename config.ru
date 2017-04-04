@@ -1,3 +1,3 @@
-require './app'
+require './app/app'
 
-run Bookmarks
+run BookmarkManager

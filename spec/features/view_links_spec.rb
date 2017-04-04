@@ -2,6 +2,8 @@
 # So that I can quickly go to web sites I regularly visit
 # I would like to see a list of links on the homepage
 
+require 'database_cleaner'
+
 feature 'viewing links' do
   scenario 'Should be able to see list of links' do
     Link.create(url: 'http://www.google.co.uk', title: 'Google')

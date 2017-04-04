@@ -18,5 +18,6 @@ group :test do
   gem 'capybara'
   gem 'coveralls', require: false
   gem 'byebug'
+  gem 'database_cleaner'
 
 end
