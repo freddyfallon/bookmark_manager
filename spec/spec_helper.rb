@@ -17,15 +17,13 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-
+ENV['RACK_ENV'] = 'test' # Needs to run before anything else to work
 require 'capybara/rspec'
 require 'rspec'
 require 'byebug'
 require './app/app.rb'
 
 Capybara.app = BookmarkManager
-
-ENV['RACK_ENV'] = 'test'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
